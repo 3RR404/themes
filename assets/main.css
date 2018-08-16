@@ -20,3 +20,22 @@ header, footer {
   margin: 0;
   padding: 10px 15px;
   background: #000; }
+  #content .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    #content .main-content .leftside-content,
+    #content .main-content .rightside-content {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      max-width: 100%; }
+      @media screen and (min-width: 768px) {
+        #content .main-content .leftside-content,
+        #content .main-content .rightside-content {
+          -webkit-box-flex: 0;
+              -ms-flex: 0 0 50%;
+                  flex: 0 0 50%;
+          max-width: 50%; } }
