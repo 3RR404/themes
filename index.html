@@ -11,6 +11,16 @@
 	<title>Themes.sk - themes for your web</title>
 </head>
 
+<script>
+
+var c = document.getElementById("circle");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+ctx.stroke();
+
+</script>
+
 <body>
 	<header id="header" class="this template has not header">
 		<!-- Exactly -->
@@ -18,12 +28,14 @@
 		<main role="main" id="content" class="main-content">
 			<div class="main-content-wrapper">
 				<div class="leftside-content">
-					<div class="round circle"><a href="#" class="btn btn-default btn-rounded"></a></div>
+					<div id="circle" class="round">
+						<canvas id="myCanvas" width="300" height="150" style="border:1px solid #f1f1f1;"></canvas>
+						<a href="#" class="btn btn-default btn-rounded"></a></div>
 					<div class="content"></div>
 				</div>
 
 				<div class="rightside-content">
-					<div class="round circle"><a href="#" class="btn btn-default btn-rounded"></a></div>
+					<div id="circle" class="round"><a href="#" class="btn btn-default btn-rounded"></a></div>
 					<div class="content"></div>
 				</div>
 			</div>

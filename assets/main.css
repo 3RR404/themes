@@ -25,7 +25,8 @@ header, footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    height: 100%; }
     #content .main-content .leftside-content,
     #content .main-content .rightside-content {
       -webkit-box-flex: 0;
